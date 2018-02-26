@@ -22,7 +22,9 @@ document.getElementById("submitButton").addEventListener('click', function makeG
 
 //If the table is clicked, the background color of the target cell is changed to color 
 //value of color picker:
-pixelTable.addEventListener('click', function(ev) {
+pixelTable.addEventListener('mousedown', function colorize(ev) {
 	ev.target.style.backgroundColor = document.getElementById("colorPicker").value;
 });
 
+//TO DO
+//holding bug, ask about preventDefault 
